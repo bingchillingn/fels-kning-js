@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Felsöknings uppgift</title>
+    <link rel="stylesheet" type="text/css" href="errorStyle.css">
+    <script src="errorCode.js" defer></script> <!-- Ensure script is loaded after HTML -->
+    <style>
+        /* Example styles for text elements */
+       
+    </style>
+	<!--
+	I filen errorCode.js finns fel i JavaScript koden. Testa sidan och försök hitta och reparera så många fel du kan. Så att koden fungerar, att knappar och textrutor beter sig logiskt och utför sin uppgift.
+	Du får även gärna göra sidan lite snyggare och koden mer effektiv eller strukturerad.
+	Det finns även några fel och problem i HTML och CSS koden som ställer till det för oss.
+	Kommentera gärna koden för att förklara vilka fel du hittat eller vad de berodde på.
+	Använd 'Console' fliken i webbutvecklings-verktygen (F12) i webbläsaren för att se felmeddelanden som kan ge ledtrådar till vad problemet är.
+	Notera i vilken fil och på vilket radnummer felet uppstått i Console när du felsöker (på höger sida i loggen).
+	Fixa så många fel du kan hitta och lämna in ditt resultat. För E nivå i kursen måste du visa att du kan identifiera och reparera några Syntax fel.
+	För högre betyg behöver du även kunna identifiera och hantera Logiska fel och Körtids fel.
+	-->
+	<script src="errorCode.js"></script>
+</head>
+<body>
+	Användbara Länkar:
+<br>
+<a href="https://validator.w3.org/#validate_by_upload" target="_blank">W3C Markup Validation Service (för HTML)</a>
+<br>
+<a href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank">W3C CSS Validation Service</a>
+<br><br>
+<a href="https://www.w3schools.com/js/js_statements.asp" target="_blank">JavaScript manual för Syntax</a>
+<br>
+<br>
+<p style="color:#EE2222; font-size:125%; font-weight:bold;">Se instruktioner i kodens kommentarer.</p>
+
+	<div id="makeWorkingCode">
+    <h2>Känsliga färger</h2>
+
+    <p id="mossyParagraph" class="textthing">Grön är färgen för natur, våren och miljö och den tredje populäraste färgen.</p>
+    <p id="seashanty_song" class="textthing">Blått uppfattas ofta som en lugn, säker och intelligent färg.</p>
+    <p id="bloodytxt" title="what is the haps?" class="textthing">Röd är en aktiv och uppseendeväckande färg.</p>
+
+    <button type="button" onclick="setColors(uno, 24, Bla)">Be Blue?</button>
+    <button type="button" onclick="setColors(tres, 66, Red)">Paint it Red!</button>
+    <button type="button" onclick="setColors(does, 84, Green)">Make it Green...</button>
+    <button type="button" onclick="setColors('off', 98, Green)">Go wild!!</button>
+    
+    <form action="">
+        Enter a color: <input type="text" id="wild"><br>
+    </form>
+    <button type="button" onclick="setColors('off', 99, document.getElementById('wild').value)">Obey the user color...</button>
+</body>
+</html>
